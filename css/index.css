@@ -1,0 +1,40 @@
+svg {
+    display: block;
+    margin: 20px auto;
+}
+
+.square {
+    fill: #FF5733;
+    stroke: #900C3F;
+    stroke-width: 5px;
+}
+
+.rectangle {
+    fill: #33FF57;
+    stroke: #1D8348;
+    stroke-width: 5px;
+}
+
+.circle {
+    fill: #3380FF;
+    stroke: #1B4F72;
+    stroke-width: 5px;
+    animation: colorChange 3s infinite alternate;
+}
+
+.ellipse {
+    fill: #F3FF33;
+    stroke: #B7950B;
+    stroke-width: 5px;
+}
+
+@keyframes colorChange {
+    0% {
+        fill: #3380FF;
+        stroke: #1B4F72;
+    }
+    100% {
+        fill: #FF33AA;
+        stroke: #6C3483;
+    }
+}
