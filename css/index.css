@@ -1,60 +1,60 @@
+
 svg {
-    display: block;
-    margin: 20px auto;
+    background-color: #f0f0f0;
+    width: 400px;
+    height: 200px;
 }
-h1{
-    text-align: center
+.container{
+    padding: auto;
+    text-align: center;
 }
 
 .square {
-    fill: #FF5733;
-    stroke: #900C3F;
+    x: 10px;
+    y: 10px;
+    width: 50px;
+    height: 50px;
+    fill: #ff5733; /* Оранжево-красный */
+    stroke: #900C3F; /* Темно-красный */
     stroke-width: 5px;
-    x: 50;
-    y: 50; 
-    width: 100; 
-    height: 100;
 }
 
 .rectangle {
-    fill: #33FF57;
-    stroke: #1D8348;
+    x: 80px;
+    y: 10px;
+    width: 80px;
+    height: 50px;
+    fill: #33ff57; /* Зеленый */
+    stroke: #1D8348; /* Темно-зеленый */
     stroke-width: 5px;
-    x : 200 ;
-    y : 50 ;
-    width: 150; 
-    height: 80;
-
 }
 
 .circle {
-    fill: #3380FF;
-    stroke: #1B4F72;
+    cx: 200px;
+    cy: 35px;
+    r: 25px;
+    stroke: #154360; 
     stroke-width: 5px;
-    animation: colorChange 3s infinite alternate;
-    cx: 450; 
-    cy: 90; 
-    r: 50;
-
+    animation: colorChange 2s infinite alternate;
 }
 
 .ellipse {
-    fill: #F3FF33;
-    stroke: #B7950B;
+    cx: 300px;
+    cy: 35px;
+    rx: 40px;
+    ry: 25px;
+    fill: #ff33a8; 
+    stroke: #8B008B; 
     stroke-width: 5px;
-    cx: 300; 
-    cy: 250; 
-    rx: 100; 
-    ry: 60;
 }
 
 @keyframes colorChange {
     0% {
-        fill: #3380FF;
-        stroke: #1B4F72;
+        fill: #3380ff;
+        stroke: #154360; 
     }
     100% {
-        fill: #FF33AA;
-        stroke: #6C3483;
+        fill: #ffcc00; 
+        stroke: #ff5733; 
     }
 }
